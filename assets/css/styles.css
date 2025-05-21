@@ -1,0 +1,45 @@
+:root {
+    --white: #FFF;
+}
+  
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: 0;
+	font-weight: normal;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+ol, ul {list-style: none;}
+table {border-collapse: separate; border-spacing: 0;}
+caption, th, td {text-align: left; font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+img, picture, video, embed {max-width: 100%;}
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+body {
+}
+
+a {text-decoration: none;}
+	
+strong {font-weight: bold; font-family: var(--font-bold);}
+em {font-style: italic;}
+small {font-size: 0.7em;}
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+.text-right {text-align: right;}
+
+.img-button {cursor: pointer; background:none repeat scroll 0 0 transparent; border:medium none; padding:0; vertical-align:middle;}
