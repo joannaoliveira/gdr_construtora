@@ -37,7 +37,7 @@ img, picture, video, embed {max-width: 100%;}
 body {
 	color: #1A1A1A;
 	font-family: var(--font);
-	background-color: var(--white);
+	background-color: var(--bgColor);
 }
 
 a {color: #1A1A1A; text-decoration: none;}
@@ -98,29 +98,70 @@ img {max-width: 100%;}
 				.mainNav .headerMain__menu--action-item svg:first-child {
 					transform: rotate(-20deg) translate(-5px, -1px);
 				}
-.headerMain__menu--nav {
-	display: none;
-	width: 100%;
-	height: calc(100vh - 140px);
-	top: 140px;
-	left: 0;
-	position: absolute;
-	background-color: var(--secondColorBg);
-}
-	.mainNav .headerMain__menu--nav {display: block;}	
-	.mainNav .headerMain__menu--nav .boxCenter {
-		display: flex;
-		pad: 2rem 0;
-		justify-content: space-between;
-	}
-	.headerMain__menu--navGallery {width: 40%;}
-	.headerMain__menu--navList {width: 59%;}
-		.headerMain__menu--navList a {
-			color: var(--white);
-			font-size: 4rem;
-			font-weight: 300;
-			display: block;
-			padding: 1rem 0;
-			font-family: var(--fontHighlight);
+		.headerMain__menu--nav {
+			display: none;
+			width: 100%;
+			height: calc(100vh - 140px);
+			top: 140px;
+			left: 0;
+			position: absolute;
+			background-color: var(--secondColorBg);
 		}
-			.headerMain__menu--navList a:hover {color: var(--secondColor);}
+			.mainNav .headerMain__menu--nav {display: block;}	
+			.mainNav .headerMain__menu--nav .boxCenter {
+				display: flex;
+				pad: 2rem 0;
+				justify-content: space-between;
+			}
+			.headerMain__menu--navGallery {width: 40%;}
+			.headerMain__menu--navList {width: 59%;}
+				.headerMain__menu--navList a {
+					color: var(--white);
+					font-size: 4rem;
+					font-weight: 300;
+					display: block;
+					padding: 1rem 0;
+					font-family: var(--fontHighlight);
+				}
+					.headerMain__menu--navList a:hover {color: var(--secondColor);}
+					
+#banner {
+	height: 80vh;
+	padding-top: 1rem;
+	background: var(--black);
+	background: linear-gradient(180deg, var(--black) 0%, var(--black) 70%, var(--bgColor) 70%, var(--bgColor) 100%);
+}
+	#banner, #banner a {color: var(--white);}		
+	#banner .boxCenter {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: url(../images/img-banner.png) no-repeat center transparent;
+		background-size: cover;
+	}
+		#banner .boxCenter h1 {
+			font-size: 2.5rem;
+			font-weight: 300;
+			text-align: center;
+			letter-spacing: 3px;
+		}
+			#banner .boxCenter h1 span {
+				font-size: 7rem;
+				font-weight: 300;
+				font-style: italic;
+				display: block;
+				letter-spacing: 0;
+				font-family: var(--fontHighlight);
+			}
+				#banner .boxCenter h1 strong {font-weight: 400;}
+		#banner .boxCenter a {
+			width: 304px;
+			height: 148px;
+			display: block;
+			text-align: center;
+			padding-top: 1rem;
+			letter-spacing: 2px;
+			background: url(../images/bg-btn-banner.png) no-repeat center transparent;
+		}
