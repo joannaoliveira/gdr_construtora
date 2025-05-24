@@ -165,3 +165,45 @@ img {max-width: 100%;}
 			letter-spacing: 2px;
 			background: url(../images/bg-btn-banner.png) no-repeat center transparent;
 		}
+
+#about {
+	display: flex;
+	justify-content: space-between;
+}
+	.about__title {
+		width: 50%;
+		padding-top: 5rem;
+	}
+		.about__title h2 {
+			font-size: 4rem;
+			font-weight: 400;
+			line-height: 1em;
+			margin: 0;
+			font-family: var(--fontHighlight);
+		}
+	.about__description {
+		width: 50%;
+		line-height: 1.6rem;
+		padding: 5rem 4rem;
+		border-left: solid 1px #D2C8BA;
+		border-right: solid 1px #D2C8BA;
+	}
+
+#infoGDR{
+	width: 100%;	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 4rem 0;
+	border-top: solid 1px #D2C8BA;
+}
+	.infoGDR__item {
+		padding: 0 2rem;
+	}
+		.infoGDR__item h3 {
+			font-size: 3rem;
+			font-weight: 400;
+			line-height: 1em;
+			margin: 0 0 0.5rem;
+			font-family: var(--fontHighlight);
+		}
