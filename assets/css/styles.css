@@ -124,6 +124,16 @@ img {max-width: 100%;}
 					font-family: var(--fontHighlight);
 				}
 					.headerMain__menu--navList a:hover {color: var(--secondColor);}
+
+@media screen and (max-width: 960px) {
+	.headerMain__menu--navList a {font-size: 2rem;}
+}
+@media screen and (max-width: 700px) {
+	.headerMain__slogan {display: none;}
+}
+@media screen and (max-width: 460px) {
+	.headerMain__menu--navList a {font-size: 1.4rem;}
+}
 					
 #banner {
 	height: 80vh;
@@ -165,6 +175,22 @@ img {max-width: 100%;}
 			letter-spacing: 2px;
 			background: url(../images/bg-btn-banner.png) no-repeat center transparent;
 		}
+		
+@media screen and (max-width: 991px) {
+	#banner .boxCenter h1 {font-size: 1.8rem;}
+		#banner .boxCenter h1 span {font-size: 5rem;}
+}
+@media screen and (max-width: 680px) {
+	#banner {height: 60vh;}
+		#banner .boxCenter h1 {font-size: 1.2rem;}
+			#banner .boxCenter h1 span {font-size: 3rem;}
+		#banner .boxCenter a {
+			font-size: 0.8rem;
+			width: 200px;
+			padding-top: 2rem;
+			background-size: contain;
+		}
+}
 
 #about {
 	display: flex;
@@ -189,21 +215,50 @@ img {max-width: 100%;}
 		border-right: solid 1px #D2C8BA;
 	}
 
+@media screen and (max-width: 900px) {
+	#about {text-align: center; flex-direction: column;}
+		.about__title {width: 100%;}
+			.about__title h2 {font-size: 4rem;}
+		.about__description {
+			width: 100%;
+			padding: 1rem 2rem 5rem;
+			border: none;
+		}
+}
+@media screen and (max-width: 440px) {
+	.about__title h2 {font-size: 3rem;}
+}
+
 #infoGDR{
-	width: 100%;	
+	width: 100%;
+	max-width: 2600px;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	padding: 4rem 0;
 	border-top: solid 1px #D2C8BA;
 }
-	.infoGDR__item {
-		padding: 0 2rem;
-	}
+	.infoGDR__item {padding: 0 2rem;}
 		.infoGDR__item h3 {
-			font-size: 3rem;
+			font-size: 2.6rem;
 			font-weight: 400;
 			line-height: 1em;
 			margin: 0 0 0.5rem;
 			font-family: var(--fontHighlight);
 		}
+
+@media screen and (max-width: 1600px) {
+	.infoGDR__item {padding: 0 1rem;}
+	.infoGDR__item h3 {font-size: 2.1rem;}
+}
+@media screen and (max-width: 1180px) {
+	#infoGDR{flex-wrap: wrap;}
+	.infoGDR__item {width: 33%; padding: 1rem;}
+}
+@media screen and (max-width: 670px) {
+	.infoGDR__item {width: 50%;}
+}
+@media screen and (max-width: 440px) {
+	.infoGDR__item {width: 100%;}
+}
