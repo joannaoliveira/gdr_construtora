@@ -463,3 +463,9 @@ img {max-width: 100%;}
 	#retrofit__description h2, #retrofit__description p {width: 100%;}
 	#retrofit__description h2 {padding: 0 0 0.5rem;}
 }
+
+#news {
+	width: 100%;
+	padding: 4rem 0;
+	background-color: var(--white);
+}
