@@ -573,3 +573,15 @@ img {max-width: 100%;}
 @media screen and (max-width: 520px) {
 	.whereWeAre__description h2 {font-size: 3rem;}
 }
+
+#footer {padding: 2rem 0;}
+#footer .boxCenter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+	#footer .boxCenter {line-height: 1.4em; flex-direction: column;}
+	#footer svg {order: -1; margin: 1rem;}
+}
