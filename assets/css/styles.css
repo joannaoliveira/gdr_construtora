@@ -262,3 +262,37 @@ img {max-width: 100%;}
 @media screen and (max-width: 440px) {
 	.infoGDR__item {width: 100%;}
 }
+
+#bannerExplore {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+	font-family: var(--fontHighlight);
+	width: 100%;
+	height: 842px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	background: url(../images/img-experiencia-global.jpg) no-repeat center transparent;
+	background-size: cover;
+}
+	#bannerExplore h3 span {display: none;}
+	#bannerExplore img {max-width: 90%;}
+	.bannerExplore__action {
+		top: -4rem;
+		right: 2%;
+		position: absolute;
+	}
+
+@media screen and (max-width: 840px) {
+	#bannerExplore {height: 600px;}
+	#bannerExplore .bannerExplore__action img {max-width: 200px;}
+}
+	@media screen and (max-width: 500px) {
+		#bannerExplore {height: 400px;}
+		#bannerExplore h3 img {display: none;}
+		#bannerExplore h3 span {display: block;}
+	}
