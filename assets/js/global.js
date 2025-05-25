@@ -5,6 +5,25 @@ $( document ).ready(function() {
     $(".headerMain__menu--action").click(function(){
         ($("#header").hasClass("mainNav")) ? $("#header").removeClass("mainNav") : $("#header").addClass("mainNav");
     });
+
+    $("#frmContact").validate({
+        rules: {
+            iName: "required",
+            iEmail: {
+                required: true,
+                email: true
+            },
+            iPhone: "required"
+        },
+        messages: {
+            iName: "Campo obrigatório",
+            iEmail: {
+                required: "Campo obrigatório",
+                email: "Digite um e-mail válido"
+            },
+            iPhone: "Campo obrigatório"
+        }
+    });
     
 });
 
