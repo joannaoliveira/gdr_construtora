@@ -540,3 +540,36 @@ img {max-width: 100%;}
 	.contact__icon {display: none;}
 	#contact__form {width: 100%; max-width: 570px;}
 }
+
+.whereWeAre__description {
+	width: 100%;
+	text-align: center;
+	padding: 4rem 0;
+}
+	.whereWeAre__description h2 {
+		font-size: 4rem;
+		font-weight: 400;
+		margin: 0 0 1rem;
+		font-family: var(--fontHighlight);
+	}
+	.whereWeAre__description p {
+		width: 98%; 
+		max-width: 800px; 
+		line-height: 1.6rem;
+		margin: 0 auto 2rem;
+	}
+	.whereWeAre__description a {
+		color: var(--white);
+		font-size: 0.9rem;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding: 1rem 2rem;
+		background-color: #1A1A1A;
+		border: solid 1px #1A1A1A;
+	}
+
+#whereWeAre iframe {width: 100%;}
+
+@media screen and (max-width: 520px) {
+	.whereWeAre__description h2 {font-size: 3rem;}
+}
