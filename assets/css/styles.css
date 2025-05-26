@@ -469,6 +469,91 @@ img {max-width: 100%;}
 	padding: 4rem 0;
 	background-color: var(--white);
 }
+	#news .boxCenter {position: relative;}
+
+.newsGallery__buttons {
+	left: calc(100% - 1000px);
+	bottom: 8px;
+	z-index: 9;
+	position: absolute;
+}
+
+.newsGalley__item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+	.newsGalley__item--info {
+		width: calc(96% - 850px);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+		.newsGalley__item--info h3 {
+			max-width: 450px;
+			font-size: 4rem;
+			font-weight: 400;
+			line-height: 1.1em;
+			margin-bottom: 2rem;
+			font-family: var(--fontHighlight);
+		}
+		.newsGalley__item--info p {
+			font-size: 1.2rem;
+			line-height: 1.6em;
+		}
+		.newsGalley__item--info-acoes {
+			font-size: 1.6rem;
+			font-family: var(--fontHighlight);
+			display: flex;
+			align-items: center;
+			padding-top: 1rem;
+		}
+			.newsGalley__item--info-acoes .numbers {width: 60px;}
+			.newsGalley__item--info-acoes .total {display: block;}
+			.newsGalley__item--info-acoes .barDetails {
+				width: calc(100% - 250px);
+				height: 2px;
+				margin-left: 1rem;
+				background-color: #F1EBE3;
+			}
+				.newsGalley__item--info-acoes .barDetails .percent {
+					width: 25%;
+					height: 2px;
+					background-color: #1A1A1A;
+				}
+	.newsGalley__item--image {width: 844px;}
+	
+@media screen and (max-width: 1374px) {
+	.newsGalley__item--info {width: 45%;}
+	.newsGalley__item--image {width: 50%;}
+	.newsGallery__buttons {
+		left: 40%;
+		bottom: 8px;
+	}
+	.newsGalley__item--info h3 {margin-top: 0;}
+}
+@media screen and (max-width: 991px) {
+	.newsGalley__item {padding-bottom: 100px; flex-direction: column; position: relative;}
+	.newsGalley__item--info, .newsGalley__item--image {width: 100%; text-align: center;}
+	.newsGalley__item--info {padding-bottom: 2rem;}
+	.newsGalley__item--image {min-height: 400px;}
+	.newsGalley__item--info h3 {max-width: 100%;}
+	.newsGalley__item--info-acoes {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+	}
+	.newsGallery__buttons {left: 85%;}
+}
+@media screen and (max-width: 620px) {
+	.newsGallery__buttons {left: 80%;}
+}
+@media screen and (max-width: 500px) {
+	.newsGalley__item--info h3 {font-size: 3rem;}
+	.newsGalley__item--info-acoes .barDetails {display: none;}
+	.newsGallery__buttons {left: 70%;}
+}
 
 #contact {
 	width: 100%;

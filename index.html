@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-	<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/js/slick/slick.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -198,7 +198,88 @@
 
 <section id="news">
     <div class="boxCenter">
-
+        <div class="newsGallery__buttons">
+            <button class="prev img-button" aria-label="Previous" type="button">
+                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5626 11.3115C20.5634 11.484 20.5297 11.6549 20.4636 11.8141C20.3975 11.9734 20.3003 12.1179 20.1776 12.239L10.6051 21.8115L20.1776 31.384C20.4094 31.6329 20.5356 31.9619 20.5296 32.302C20.5236 32.642 20.3859 32.9664 20.1454 33.2069C19.9049 33.4474 19.5805 33.5851 19.2405 33.5911C18.9005 33.5971 18.5714 33.4709 18.3226 33.239L7.82257 22.739C7.57678 22.493 7.43872 22.1594 7.43872 21.8115C7.43872 21.4637 7.57678 21.1301 7.82257 20.884L18.3226 10.384C18.5687 10.1383 18.9023 10.0002 19.2501 10.0002C19.5979 10.0002 19.9315 10.1383 20.1776 10.384C20.3003 10.5052 20.3975 10.6497 20.4636 10.809C20.5297 10.9682 20.5634 11.1391 20.5626 11.3115Z" fill="black"/>
+                    <path d="M34.5625 21.8115C34.558 22.1582 34.4182 22.4894 34.1731 22.7346C33.9279 22.9798 33.5967 23.1195 33.25 23.124H8.75C8.4019 23.124 8.06806 22.9857 7.82192 22.7396C7.57578 22.4935 7.4375 22.1596 7.4375 21.8115C7.4375 21.4634 7.57578 21.1296 7.82192 20.8834C8.06806 20.6373 8.4019 20.499 8.75 20.499H33.25C33.5967 20.5036 33.9279 20.6433 34.1731 20.8885C34.4182 21.1336 34.558 21.4648 34.5625 21.8115Z" fill="black"/>
+                </svg>
+            </button>
+            <button class="next img-button" aria-label="Next" type="button">
+                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.4374 11.3115C21.4366 11.484 21.4703 11.6549 21.5364 11.8141C21.6025 11.9734 21.6997 12.1179 21.8224 12.239L31.3949 21.8115L21.8224 31.384C21.5906 31.6329 21.4644 31.9619 21.4704 32.302C21.4764 32.642 21.6141 32.9664 21.8546 33.2069C22.0951 33.4474 22.4195 33.5851 22.7595 33.5911C23.0995 33.5971 23.4286 33.4709 23.6774 33.239L34.1774 22.739C34.4232 22.493 34.5613 22.1594 34.5613 21.8115C34.5613 21.4637 34.4232 21.1301 34.1774 20.884L23.6774 10.384C23.4313 10.1383 23.0977 10.0002 22.7499 10.0002C22.4021 10.0002 22.0685 10.1383 21.8224 10.384C21.6997 10.5052 21.6025 10.6497 21.5364 10.809C21.4703 10.9682 21.4366 11.1391 21.4374 11.3115Z" fill="black"/>
+                    <path d="M7.4375 21.8115C7.44203 22.1582 7.58177 22.4894 7.82693 22.7346C8.0721 22.9798 8.40331 23.1195 8.75 23.124H33.25C33.5981 23.124 33.9319 22.9857 34.1781 22.7396C34.4242 22.4935 34.5625 22.1596 34.5625 21.8115C34.5625 21.4634 34.4242 21.1296 34.1781 20.8834C33.9319 20.6373 33.5981 20.499 33.25 20.499H8.75C8.40331 20.5036 8.0721 20.6433 7.82693 20.8885C7.58177 21.1336 7.44203 21.4648 7.4375 21.8115Z" fill="black"/>
+                </svg>
+            </button>
+        </div>
+        <div class="newsGallery">
+            <div>
+                <div class="newsGalley__item">
+                    <div class="newsGalley__item--info">
+                        <div class="newsGalley__item--info-text">
+                            <h3>Novo Clube no Tamboré 10.</h3>
+                            <p>Recém-concluída no Tamboré 10, esta realização impressiona por sua excelência e sofisticação. Um clube completo, com academia moderna, piscina aquecida, salão de festas, brinquedoteca, salão de jogos, sala de spinning e um rooftop deslumbrante — um verdadeiro espetáculo em cada detalhe.</p>
+                        </div>
+                        <div class="newsGalley__item--info-acoes">
+                            <div class="numbers">
+                                <span class="active"></span> / 
+                                <span class="total"></span>
+                            </div>
+                            <div class="barDetails">
+                                <div class="percent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsGalley__item--image">
+                        <img src="assets/images/img-novo-clube.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="newsGalley__item">
+                    <div class="newsGalley__item--info">
+                        <div class="newsGalley__item--info-text">
+                            <h3>Novo Clube no Tamboré 1234.</h3>
+                            <p>Recém-concluída no Tamboré 10, esta realização impressiona por sua excelência e sofisticação. Um clube completo, com academia moderna, piscina aquecida, salão de festas, brinquedoteca, salão de jogos, sala de spinning e um rooftop deslumbrante — um verdadeiro espetáculo em cada detalhe.</p>
+                        </div>
+                        <div class="newsGalley__item--info-acoes">
+                            <div class="numbers">
+                                <span class="active"></span> / 
+                                <span class="total"></span>
+                            </div>
+                            <div class="barDetails">
+                                <div class="percent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsGalley__item--image">
+                        <img src="assets/images/img-novo-clube.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="newsGalley__item">
+                    <div class="newsGalley__item--info">
+                        <div class="newsGalley__item--info-text">
+                            <h3>Novo Clube no Tamboré 5678.</h3>
+                            <p>Recém-concluída no Tamboré 10, esta realização impressiona por sua excelência e sofisticação. Um clube completo, com academia moderna, piscina aquecida, salão de festas, brinquedoteca, salão de jogos, sala de spinning e um rooftop deslumbrante — um verdadeiro espetáculo em cada detalhe.</p>
+                        </div>
+                        <div class="newsGalley__item--info-acoes">
+                            <div class="numbers">
+                                <span class="active"></span> / 
+                                <span class="total"></span>
+                            </div>
+                            <div class="barDetails">
+                                <div class="percent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsGalley__item--image">
+                        <img src="assets/images/img-novo-clube.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -257,6 +338,7 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="assets/js/beforeafter.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/global.js"></script>
 </body>
 </html>
