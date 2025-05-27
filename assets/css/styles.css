@@ -133,7 +133,7 @@ img {max-width: 100%;}
 					.navGallery__item--info-acoes .numbers {color: var(--white); width: 60px;}
 					.navGallery__item--info-acoes .total {display: block;}
 					.navGallery__item--info-acoes .barDetails {
-						width: calc(90% - 250px);
+						width: calc(80% - 250px);
 						height: 2px;
 						margin-left: 1rem;
 						background-color: #F1EBE35E;
@@ -711,4 +711,62 @@ img {max-width: 100%;}
 @media screen and (max-width: 991px) {
 	#footer .boxCenter {line-height: 1.4em; flex-direction: column;}
 	#footer svg {order: -1; margin: 1rem;}
+}
+
+#projectGallery {position: relative; margin-bottom: -20px;}
+#projectGallery .projectGallery__info {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	position: absolute;
+}
+#projectGallery .boxCenter {
+	color: var(--white);
+	justify-content: space-between;
+	display: flex;
+}
+	.projectGallery__titulo {
+		width: 40%;
+		font-size: 5rem;
+		font-weight: 400;
+		line-height: 1.1em;
+		max-width: 516px;
+		font-family: var(--fontHighlight);
+	}
+	.projectGallery__item--info-acoes {
+		width: 50%;
+		font-size: 1.6rem;
+		font-family: var(--fontHighlight);
+		display: flex;
+		align-items: center;
+		padding-top: 1rem;
+	}
+		.projectGallery__item--info-acoes .numbers {width: 60px;}
+		.projectGallery__item--info-acoes .total {display: block;}
+		.projectGallery__item--info-acoes .barDetails {
+			width: calc(100% - 250px);
+			height: 2px;
+			margin: 0 2rem 0 1rem;
+			background-color: #F1EBE330;
+		}
+			.projectGallery__item--info-acoes .barDetails .percent {
+				width: 25%;
+				height: 2px;
+				background-color: #FFF;
+			}
+			
+@media screen and (max-width: 1200px) {
+	.projectGallery__titulo {font-size: 4rem;}
+}
+@media screen and (max-width: 991px) {
+	#projectGallery .projectGallery__info {bottom: 50px;}
+	.projectGallery__titulo {display: none;}
+	.projectGallery__item--info-acoes {width: 100%;}
+}
+@media screen and (max-width: 760px) {
+	#projectGallery .projectGallery__info {bottom: 30px;}
+}
+@media screen and (max-width: 500px) {
+	.projectGallery__item--info-acoes .numbers {font-size: 1rem;}
 }

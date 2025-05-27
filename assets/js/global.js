@@ -76,6 +76,39 @@ $( document ).ready(function() {
         itemCurrentSlide = parseInt(nextSlide) + 1;
         slideActionsBeforeChange(itemCurrentSlide, totalSlides, ".newsGallery__item--info-acoes", ".newsGallery__buttons", "black");
     });
+
+    /* Slider interna */
+    var itemCurrentSlideInterna = "01";
+    var totalSlidesInterna = 1;
+
+    $('.projectGallery').on('init reInit afterChange', function(event, slick){
+        totalSlidesInterna = slick.slideCount;
+        slideActionsInit (totalSlidesInterna, itemCurrentSlideInterna, ".projectGallery__item--info-acoes", ".projectGallery__item--info-acoes .buttons");
+    });
+    
+    $(".projectGallery__item--info-acoes .active").html(itemCurrentSlide.toString());
+
+    $('.projectGallery').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        nextArrow: '.projectGallery__item--info-acoes .buttons .next',
+        prevArrow: '.projectGallery__item--info-acoes .buttons .prev'
+    });
+
+    $('.projectGallery').on('init reInit afterChange', function(event, slick){
+        totalSlidesNav = slick.slideCount;
+        slideActionsInit (totalSlidesInterna, itemCurrentSlideInterna, ".projectGallery__item--info-acoes", ".projectGallery__item--info-acoes .buttons");
+    });
+    
+    $(".navGallery__item--info-acoes .active").html(itemCurrentSlideInterna.toString());
+    $('.projectGallery').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        itemCurrentSlideInterna = parseInt(nextSlide) + 1;
+        slideActionsBeforeChange(itemCurrentSlideInterna, totalSlidesInterna, ".projectGallery__item--info-acoes", ".projectGallery__item--info-acoes .buttons", "white");
+    });
     
 });
 
