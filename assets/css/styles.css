@@ -58,6 +58,7 @@ img {max-width: 100%;}
 #header {
 	width: 100%;
 	position: relative;
+	z-index: 9999;
 	background-color: var(--black);
 }
 	#header.mainNav {height: 140px; background-color: var(--secondColorBg);}
