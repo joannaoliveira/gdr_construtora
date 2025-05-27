@@ -36,6 +36,28 @@ $( document ).ready(function() {
         }
     });
 
+    $('.projectPictures__gallery').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: '60px',
+        responsive: [
+            {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+            }
+            },
+        ]
+    });
+
     /* Slider Nav */
     var itemCurrentSlideNav = "01";
     var totalSlidesNav = 1;
